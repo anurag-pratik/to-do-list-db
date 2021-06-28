@@ -1,0 +1,158 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  background-color: #0a0a0a;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+}
+
+.navbar {
+  background-color: #161616 !important;
+}
+.top-bar {
+  position: absolute;
+  top: 0;
+  min-height: 80px;
+  color: #f8154e;
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0 10px 10px -10px #d40b3e;
+  -moz-box-shadow: 0 10px 10px -10px #d40b3e;
+  box-shadow: 0 10px 10px -10px #d40b3e;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.2rem;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.container-fluid {
+  margin-top: 80px;
+  align-items: center;
+}
+
+.dateBox {
+  padding-top: 8px;
+  background-color: #161616 !important;
+  width: 25%;
+  min-width: 275px;
+  margin: auto;
+  margin-top: 18vh;
+  height: 45px;
+  border-radius: 25px;
+  color: #e21a4c;
+  box-shadow: 0px 0px 2px 2px #d41948;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.listBox {
+  background-color: #161616 !important;
+  box-shadow: 0px 0px 2px 2px #d41948;
+  width: 22%;
+  min-width: 250px;
+  margin: auto;
+  margin-top: 5vh;
+  padding-top: 5px;
+  color: rgb(236, 232, 232);
+  border-radius: 10px;
+  text-align: left !important;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+}
+
+h3 {
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.listItem {
+  border-bottom: solid 1px #36363678;
+  display: inline-block;
+  width: 75%;
+  word-wrap: break-word;
+}
+
+.chkBox {
+  margin-right: 10px;
+  margin-left: 25px;
+  display: inline;
+  background-color: #161616;
+}
+
+.inputBox {
+  display: inline-block;
+  height: 34px;
+  width: 14vw;
+  margin: 5px 0;
+  margin-left: 25px;
+  margin-right: 10px;
+  background-color: #242424;
+  color: white;
+}
+.inputBox:focus {
+  background-color: #363636;
+  color: white;
+}
+
+.btn {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.footer {
+  background-color: #020202 !important;
+  height: 5.5vh;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin: 0 auto;
+  bottom: 0;
+  color: #f8124c;
+  max-width: 250px;
+  border-radius: 12px;
+}
+
+.footer-text {
+  padding-top: 1.5vh;
+  font-size: 0.8rem;
+}
+
+a {
+  color: #e21a4c;
+}
+
+a:hover {
+  color: rgb(238, 238, 238);
+}
+
+@media only screen and (max-width: 1500px) {
+  h3 {
+    font-size: 0.85rem;
+  }
+  .inputBox {
+    width: 58%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .dateBox {
+    visibility: hidden;
+  }
+  .footer {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark top-bar">
+        <h1 class="ml-auto mr-auto">To-Do List</h1>
+    </nav>
+    <div class="container-fluid">
+        <h2 class="dateBox">
+            <%= date %>
+        </h2>
+        <div class="listBox">
+            <% foundItems.forEach(function(foundItem){ %>
+                <form action="/delete" method="post">
+                    <input class="chkBox" type="checkbox" name="checkBox" value=" <%= foundItem._id %> "
+                        onchange="this.form.submit()">
+                    <h3 class="listItem">
+                        <%= foundItem.itemContent %>
+                    </h3>
+                </form>
+                <br>
+                <% }); %>
+                    <form action="/" method="post">
+                        <input autocomplete="off" class="inputBox form-control" name="listInput" type="text">
+                        <button type="submit" class="btn btn-outline-light rounded-pill">Add</button>
+                    </form>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p class="footer-text">© 2021 Copyright: <a href="https://github.com/anurag-pratik" target="_blank">Anurag
+                Pratik</a></p>
+    </div>
+
+</body>
+
+</html>
