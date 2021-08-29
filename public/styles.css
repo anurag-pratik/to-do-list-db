@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
   overflow: scroll;
+=======
+  overflow-y: scroll;
+>>>>>>> a270fe00d90fdb844b139d667eb62f5842e82271
   margin: 0;
   text-align: center;
   background-color: #0a0a0a;
