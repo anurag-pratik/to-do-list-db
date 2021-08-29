@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow: scroll;
   margin: 0;
   text-align: center;
   background-color: #0a0a0a;
@@ -66,6 +66,7 @@ h2 {
   padding-bottom: 25px;
   padding-top: 25px;
   padding-right: 25px;
+  margin-bottom: 20vh;
 }
 
 h3 {
@@ -93,7 +94,7 @@ h3 {
 .inputBox {
   display: inline-block;
   height: 34px;
-  width: 14vw;
+  width: 12vw;
   margin: 5px 0;
   margin-left: 25px;
   margin-right: 10px;
